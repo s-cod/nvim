@@ -11,12 +11,14 @@ lspconfig.servers = {
     "gopls",
     -- "hls",
     -- "ols",
+    -- "pyright",
     "ruff",
 }
 
 -- list of servers configured with default config.
 local default_servers = {
     -- "ols",
+    -- "pyright",
     "ruff",
 }
 
@@ -72,17 +74,17 @@ lspconfig.gopls.setup({
 --     on_init = on_init,
 --     capabilities = capabilities,
 -- })
-lspconfig.ruff.setup({
+lspconfig.pyright.setup({
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
 
     settings = {
-        python = {
-            analysis = {
-                typeCheckingMode = "off", -- Disable type checking diagnostics
-            },
-        },
+        -- python = {
+        --     analysis = {
+        --         typeCheckingMode = "off", -- Disable type checking diagnostics
+        --     },
+        -- },
     },
 })
 

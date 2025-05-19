@@ -11,15 +11,15 @@ lspconfig.servers = {
     "gopls",
     -- "hls",
     -- "ols",
-    -- "pyright",
-    "ruff",
+    -- "ruff",
+    -- "pylsp",
+    "pyright",
 }
 
 -- list of servers configured with default config.
 local default_servers = {
     -- "ols",
     -- "pyright",
-    "ruff",
 }
 
 -- lsps with default config
@@ -74,15 +74,28 @@ lspconfig.gopls.setup({
 --     on_init = on_init,
 --     capabilities = capabilities,
 -- })
+-- lspconfig.ruff.setup({
+--     on_attach = on_attach,
+--     on_init = on_init,
+--     capabilities = capabilities,
+--     settings = {},
+-- })
 lspconfig.pyright.setup({
+
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
-
     settings = {
-        -- python = {
-        --     analysis = {
-        --         typeCheckingMode = "off", -- Disable type checking diagnostics
+        -- pylsp = {
+        --     plugins = {
+        --         pycodestyle = { enabled = false },
+        --         pyflakes = { enabled = false },
+        --         autopep8 = { enabled = false },
+        --         yapf = { enabled = false },
+        --         mccaqbe = { enabled = false },
+        --         pulsp_mypy = { enabled = false },
+        --         pyls_black = { enabled = false },
+        --         pyls_isort = { enabled = false },
         --     },
         -- },
     },

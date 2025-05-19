@@ -9,5 +9,6 @@ o.softtabstop = 4
 
 o.cursorlineopt = "both" -- to enable cursorline!
 
+o.wrap = false
 -- set filetype for .CBL COBOL files.
 -- vim.cmd([[ au BufRead,BufNewFile *.CBL set filetype=cobol ]])

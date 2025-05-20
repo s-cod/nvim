@@ -7,7 +7,7 @@ o.shiftwidth = 4
 o.tabstop = 4
 o.softtabstop = 4
 
-o.cursorlineopt = "both" -- to enable cursorline!
+-- o.cursorlineopt = "both" -- to enable cursorline!
 
 o.wrap = false
 o.number = true
@@ -17,4 +17,5 @@ o.wrap = false
 -- vim.cmd([[ au BufRea
 --
 -- :d,BufNewFile *.CBL set filetype=cobol ]])
+
 -- vim.notify = require("notify")
